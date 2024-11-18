@@ -1,0 +1,369 @@
+/* Reseta margens, paddings, e define fonte padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Definições para o corpo da página, incluindo fundo */
+body {
+  background: url(./assets/photo-1617309215127-ebeb4eddeba5.jpeg);
+  background-color: #222;
+  background-size: 100%;
+}
+
+/* Definições gerais para a área principal */
+main {
+  position: relative;
+}
+
+/* Estilo da divIndex (para efeito de posicionamento) */
+.divIndex {
+  position: relative;
+}
+
+/* Estilos do elemento "eye", posicionado no canto inferior direito */
+.eye {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: .25rem;
+
+  && p {
+    color: #FFE919; /* Texto amarelo */
+    font-size: 12px;
+  }
+
+  && img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* Estilos do elemento "star", posicionado à direita */
+.star {
+  position: absolute;
+  right: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: .25rem;
+
+  && img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Estilos para os botões de ação */
+.div-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+}
+
+/* Estilos do botão "btn-star" */
+.btn-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  border: 1px solid #FFE919;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  padding: .75rem;
+  color: #fff;
+  gap: .25rem;
+
+  &&:hover {
+    background-color: #222; /* Cor de fundo ao passar o mouse */
+  }
+
+  && img {
+    width: 20px;
+    height: 20px;
+  }
+
+  && span {
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    color: #222;
+    background-color: #FFE919;
+    border-radius: 100px;
+    padding: .20rem;
+    font-size: .75rem;
+  }
+}
+
+/* Estilos do cabeçalho */
+header {
+  position: relative;
+  color: #FFE919; /* Texto amarelo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Estilo da linha horizontal */
+hr {
+  width: 700px;
+  border: #FFE919 1px solid;
+}
+
+/* Estilo para o sabre azul */
+.blue-saber {
+  position: absolute;
+  top: 50%;
+  border-radius: 10px;
+  left: 0%;
+  width: 800px;
+  height: 5px;
+  background-color: white;
+  box-shadow: 0 0 5px #f40303, 0 0 25px #f40303, 0 0 50px #f40303, 0 0 100px #f40303;
+}
+
+/* Estilo para o sabre vermelho */
+.red-saber {
+  position: absolute;
+  top: 50%;
+  border-radius: 10px;
+  right: 0%;
+  width: 800px;
+  height: 5px;
+  background-color: white;
+  box-shadow: 0 0 5px #f40303, 0 0 25px #f40303, 0 0 50px #f40303, 0 0 100px #f40303;
+}
+
+/* Estilos para o catálogo de filmes */
+.catalog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  && img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 40%;
+    right: -10%;
+  }
+}
+
+/* Estilos para os cartões de filme */
+.movie-card {
+  background-color: #111;
+  border: 1px solid #FFE919;
+  border-radius: 5px;
+  position: relative;
+  padding: 1rem;
+  width: 400px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+/* Efeito de hover no cartão de filme */
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+/* Títulos e textos dentro do cartão de filme */
+.movie-card h2 {
+  font-size: 1.2rem;
+  color: #FFE919;
+  margin-bottom: 0.5rem;
+}
+
+.movie-card p {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Estilo detalhado para a página de detalhes do filme */
+.movie-details {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #111;
+  border: 1px solid #FFE919;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-details h2,
+h3 {
+  font-size: 1.8rem;
+  color: #FFE919;
+  margin-bottom: 1rem;
+}
+
+.movie-details p {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Lista de detalhes do filme */
+.movie-details ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.movie-details li {
+  color: #fff;
+}
+
+/* Estilo do botão de "voltar" */
+.back {
+  width: 20px;
+  margin-top: 1rem;
+  margin-left: 4rem;
+  cursor: pointer;
+
+  && button {
+    background: none;
+    border: none;
+    color: #FFE919;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    && img {
+      width: 15px;
+    }
+  }
+}
+
+/* Estilos para o efeito de "skeleton" durante o carregamento */
+.skeleton {
+  opacity: .7;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton-text {
+  width: 100%;
+  height: 1rem;
+  margin-bottom: .25rem;
+  border-radius: .25rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.skeleton-span {
+  width: 100%;
+  height: 1.25rem;
+  margin-bottom: .25rem;
+  border-radius: .25rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.skeleton-text2 {
+  width: 80%;
+  height: 1rem;
+  margin-bottom: .25rem;
+  border-radius: .25rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Animação do efeito skeleton */
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+/* Estilos para telas maiores que 1024px */
+@media screen and (max-width: 1024px) {
+  .movie-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .catalog {
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .blue-saber, .red-saber {
+    width: 600px;
+  }
+}
+
+/* Estilos para telas médias (768px) */
+@media screen and (max-width: 768px) {
+  .movie-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .catalog {
+    width: 100%;
+    gap: .5rem;
+  }
+
+  .blue-saber, .red-saber {
+    width: 500px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    width: 100%;
+  }
+}
+
+/* Estilos para telas pequenas (480px) */
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .movie-details {
+    padding: 1rem;
+  }
+
+  .catalog img {
+    top: 50%;
+    right: 0;
+  }
+}
