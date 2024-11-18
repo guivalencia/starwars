@@ -77,3 +77,7 @@ Este projeto foi desenvolvido como um exercício para demonstrar habilidades em 
 ## Contato
 
 Para dúvidas ou sugestões, entre em contato com [guilhermevalencia@gmail.com](mailto:guilhermevalencia@gmail.com).
+
+### 1. Baixe ou clone o repositório:
+```bash
+git clone <https://github.com/guivalencia/starwars>
